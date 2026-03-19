@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: linear-gradient(135deg, #e9f4fb 0%, #ffffff 100%);
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    border-top: 5px solid #007BFF;
+}
+
+.page-title {
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.recommendations {
+    margin-top: 20px;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#rec-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.result-box {
+    padding: 15px;
+    background: #eef;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.risk-label {
+    font-weight: bold;
+}
+
+.risk-label.low { color: #28a745; }
+.risk-label.medium { color: #fd7e14; }
+.risk-label.high { color: #dc3545; }
+
+.probability {
+    font-weight: bold;
+}
+
+.chart-container {
+    text-align: center;
+}

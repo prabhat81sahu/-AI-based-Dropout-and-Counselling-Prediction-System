@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retrain Model</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Retrain Model</h1>
+        <p>{{ message }}</p>
+        <form method="post" enctype="multipart/form-data" class="retrain-form">
+            <input type="file" name="file" accept=".csv"><br>
+            <button type="submit" class="btn">Upload & Retrain</button>
+        </form>
+        <a href="{{ url_for('home') }}" class="btn">Home</a>
+    </div>
+</body>
+</html>

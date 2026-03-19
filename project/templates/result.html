@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result-box">
+            <p>Predicted risk: <span class="risk-label {{ risk|lower }}">{{ risk }}</span></p>
+            <p>Probability score: <span class="probability">{{ probability }}</span></p>
+            {% if recommendations %}
+            <div class="result-recs">
+                <h2>Recommended Actions</h2>
+                <ul>
+                    {% for r in recommendations %}
+                        <li>{{ r }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+        <a href="{{ url_for('home') }}" class="btn">Back to form</a>
+    </div>
+</body>
+</html>
